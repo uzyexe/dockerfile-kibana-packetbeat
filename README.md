@@ -19,22 +19,16 @@ The Kibana UI application provides advanced visualizations and ad-hoc queries. W
 
 ## Dockerfile
 
-[**Trusted Build**](https://index.docker.io/u/uzyexe/kibana-packetbeat)
+[**Trusted Build**](https://registry.hub.docker.com/u/uzyexe/kibana-packetbeat/)
 
-This Docker image is based on the Official [dockerfile/ubuntu](https://index.docker.io/_/dockerfile/ubuntu) base image.
+This Docker image is based on the Official [dockerfile/ubuntu](https://registry.hub.docker.com/u/dockerfile/ubuntu/) base image.
 
 ## How to use this image
 
 ```
-docker run --name some-container -d uzyexe/kibana-packetbeat
+docker run --name some-container -d -p 8080:8000uzyexe/kibana-packetbeat
 ```
 
-## exposing the port
-
-```
-docker run --name some-container -d -p 8080:8000 uzyexe/kibana-packetbeat
-```
-
-Then you can hit ```http://localhost:8080``` or ```http://host-ip:8080``` in your browser.
+Then you can run ```http://localhost:8080``` or ```http://host-ip:8080``` in your browser.
 
 
