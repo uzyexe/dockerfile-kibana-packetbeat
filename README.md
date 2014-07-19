@@ -26,7 +26,7 @@ This Docker image is based on the Official [dockerfile/ubuntu](https://registry.
 ## How to use this image
 
 ```
-docker run --name some-container -d -p 8080:8000uzyexe/kibana-packetbeat
+docker run --name some-container -d -p 8080:8000 uzyexe/kibana-packetbeat
 ```
 
 Then you can run ```http://localhost:8080``` or ```http://host-ip:8080``` in your browser.
