@@ -1,0 +1,40 @@
+# uzyexe/kibana-packetbeat
+
+## What is kibana-packetbeat
+
+This image is extended ```Kibana``` to support new panels specialized in visualizing network data.
+
+
+## What is Packetbeat
+
+Packetbeat is a distributed packet monitoring system that can be used for application performance management. Think of it like a distributed real-time Wireshark with a lot more analytics features.
+
+Packetbeat agents sniff the traffic between your application processes, parse on the fly protocols like HTTP, MySQL, Postgresql or REDIS and correlate the messages into transactions.
+
+For each transaction, the agents insert a JSON document into Elasticsearch where they are stored and indexed.
+
+The Kibana UI application provides advanced visualizations and ad-hoc queries. We have extended Kibana with our own panel types for visualizing network topologies.
+
+[http://packetbeat.com](http://packetbeat.com)
+
+## Dockerfile
+
+[**Trusted Build**](https://index.docker.io/u/uzyexe/kibana-packetbeat)
+
+This Docker image is based on the Official [dockerfile/ubuntu](https://index.docker.io/_/dockerfile/ubuntu) base image.
+
+## How to use this image
+
+```
+docker run --name some-container -d uzyexe/kibana-packetbeat
+```
+
+## exposing the port
+
+```
+docker run --name some-container -d -p 8080:8000 uzyexe/kibana-packetbeat
+```
+
+Then you can hit ```http://localhost:8080``` or ```http://host-ip:8080``` in your browser.
+
+
