@@ -1,6 +1,6 @@
 FROM debian:squeeze
 
-ENV VERSION 3.1.1
+ENV VERSION 3.1.2
 
 RUN apt-get update -qq && \
     apt-get install -qy curl python && \
